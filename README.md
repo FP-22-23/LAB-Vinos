@@ -79,8 +79,7 @@ Crear la clase **Vinos** con las siguientes propiedades y operaciones:
 **Criterio de igualdad:**
 - Dos objetos de tipo **Vino** son iguales si los son los vinos que contienen.
 
-#### **Apartado b** 
-Operaciones de manipulación
+#### **Apartado b - Operaciones de manipulación**
 
 **Otras operaciones:**
 - **Vinos::agregarVino:** añade un Vino dado como parámetro al objeto de tipo Vinos sobre el que se aplica.
@@ -90,8 +89,7 @@ Operaciones de manipulación
 - **Vinos::agregarVinos:** añade todos los vinos de una colección dada como parámetro al objeto de tipo Vinos que lo invoca.
 - **Vinos::contieneVinos:** devuelve cierto si el contenedor contiene todos los vinos de una colección de vinos dada como parámetro.
 
-#### **Apartado c** 
-Tratamientos secuenciales simples
+#### **Apartado c - Tratamientos secuenciales simples**
 
 - **Vinos::calcularNumeroVinosDePais:** cuenta el número de vinos de un país dado como parámetro.
 - **Vinos::obtenerVinosRangoPuntos:** devuelve una colección de objetos de tipo Vino solo con los vinos que estén valorados en un rango de puntos determinado. El rango vendrá especificado por dos enteros (inf y sup) dados como parámetro. Si el valor del límite inferior del rango es superior al valor del límite superior, se elevará `IllegalArgumentException`.
@@ -99,26 +97,23 @@ Tratamientos secuenciales simples
 - **Vinos::obtenerVinosBaratos:** obtiene un conjunto con los vinos cuyo precio es inferior a uno dado como parámetro.
 - **Vinos::existeVinoDeUvaEnRegion:** devuelve true si existe en la región dada como parámetro un vino elaborado con la uva dada como parámetro.
 
-
-#### **Apartado d** 
-Tratamientos secuenciales de acumulación
+#### **Apartado d - Tratamientos secuenciales de acumulación**
 
 - **Vinos::calcularUvasDeRegion:** devuelve un conjunto con los nombres de las uvas que se usan en los vinos de una región dada como parámetro
 - **Vinos::calcularTotalPuntosVinosDeRegion:** devuelve la suma de las puntuaciones de todos los vinos de una región dada como parámetro.
 - **Vinos::calcularMediaPuntosVinosDeUva**: devuelve la puntuación media de los vinos obtenidos a partir de un tipo de uva dado como parámetro. Si la media no se puede calcular, devuelve cero.
 
-#### **Apartado e** 
-Tratamientos secuenciales con criterios de ordenación
+#### **Apartado e - Tratamientos secuenciales con criterios de ordenación**
 
 - **Vinos::obtenerVinoMejorPuntuado:** devuelve el objeto de tipo Vino con la puntuación más alta. Si no se puede calcular eleva NoSuchElementException.
 - **Vinos::obtenerVinoMejorPuntuadoDePais:** devuelve el objeto de tipo Vino con la puntuación más alta de un país dado como parámetro. Si no se puede calcular eleva `NoSuchElementException`.
 - **Vinos::obtenerNVinosRegionOrdenadosPrecio**: devuelve una lista ordenada con los N vinos más caros de una región dada como parámetro, ordenados del más caro al más barato.
 
-#### **Apartado f** 
-Tratamientos secuenciales con **Map**
+#### **Apartado f - Tratamientos secuenciales con Map**
 
 - **Vinos::agruparVinosPorPais:** devuelve un Map que asocia a cada país una lista con los objetos de tipo Vino de ese país. 
 - **Vinos::agruparUvasPorPais:** devuelve un Map que asocia los países y con conjuntos que contienen los nombres de las uvas usadas en los vinos del respectivo país.
 - **Vinos::calcularCalidadPrecioPorRegionMayorDe:** devuelve un Map que asocia las regiones con el número de vinos cuya relación calidad/precio supera un umbral dado como parámetro.
-
-
+- **Vinos::calcularVinoMasCaroPorPais:** devuelve un Map que asocia a cada país el vino más caro de ese país.
+- **Vinos::calcularNMejoresVinosPorPais:** devuelve un SortedMap que asocia a cada país los N vinos mejor puntuados de ese país. 
+- **Vinos::calcularRegionConMejoresVinos:** obtiene la región con mayor número de vinos cuya relación calidad/precio supera un umbral dado como parámetro.
